@@ -27,7 +27,7 @@ fun OrderNowScreen() {
                     OrderNowTopBar()
                 },
                 bottomBar = {
-                    OrderNowBottomBar(appState)
+OrderNowBottomBar(appState)
                 }
             ) { innerPadding ->
                 println(innerPadding)
