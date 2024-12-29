@@ -1,7 +1,11 @@
 package com.modernapp.sourceoftruth.ui.features.home
 
-class HomeViewModel {
+import dagger.hilt.android.lifecycle.HiltViewModel
+import androidx.lifecycle.ViewModel
+import javax.inject.Inject
 
-    companion object {
-    }
+@HiltViewModel
+class HomeViewModel @Inject constructor() : ViewModel() {
+
 }
+

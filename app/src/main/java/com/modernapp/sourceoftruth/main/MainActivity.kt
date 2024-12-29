@@ -9,17 +9,15 @@ import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import com.modernapp.sourceoftruth.ui.OrderScreen
 import com.modernapp.sourceoftruth.ui.theme.SourceOfTruthTheme
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            SourceOfTruthTheme {
-                Surface(modifier = Modifier.fillMaxSize()) {
-                    OrderScreen()
-                }
-            }
+            OrderNowScreen()
         }
     }
 }
